@@ -382,6 +382,11 @@ nav {
     cursor:pointer;
 }
 
+.slide-thumb.active {
+    background:#0069FF;
+    border:1px solid #0069FF;
+}
+
 .slideText p {
     margin:8px 0 0 0;
 }
@@ -405,42 +410,6 @@ a.contactLink {
 
 a.contactLink:hover {
     text-decoration:underline;
-}
-
-#thumb-1.active, #thumb-1:hover {
-    background-position:3px -85px;
-}
-
-#thumb-2{
-    background-position:-127px 3px;
-}
-
-#thumb-2.active, #thumb-2:hover{
-    background-position:-127px -85px;
-}
-
-#thumb-3{
-    background-position:-257px 3px;
-}
-
-#thumb-3.active, #thumb-3:hover{
-    background-position:-257px -85px;
-}
-
-#thumb-4{
-    background-position:-387px 3px;
-}
-
-#thumb-4.active, #thumb-4:hover{
-    background-position:-387px -85px;
-}
-
-#thumb-5{
-    background-position:-517px 3px;
-}
-
-#thumb-5.active, #thumb-5:hover{
-    background-position:-517px -85px;
 }
 
 #main-content{
