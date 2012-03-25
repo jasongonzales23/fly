@@ -304,12 +304,12 @@ nav {
     margin:0 5px;
 }
 
-.ie7 #nav li a.selected {
+.ie7 #nav li.selected a{
     display:inline-block;
     margin:-5px 5px 0 5px;
 }
 
-#nav li a.selected {
+#nav li.selected a{
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
     border-radius:4px;

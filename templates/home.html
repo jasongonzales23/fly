@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load cms_tags %}
-{% block body_class %}home{% endblock %}
+{% block body_id %}home{% endblock %}
 {% block base_content %}
         <div id="slideshow">
                 <img class="slide default" src="{{STATIC_URL}}img/shared-ownership.png" alt="mobile devices">
@@ -47,20 +47,13 @@
         </div>
         <div id="bottom-content">
             <div class="content-block">
-                <h2><span class="big">1</span> Get Your Card</h2>
-                <img src="{{STATIC_URL}}img/card.png" alt="fly card">
-                <p>With FLY Management all you need to worry about is flying. We handle pilot staffing, maintenance, expenses, and anything else you could possibly imagine.</p>
+		{% placeholder bottom_content_1 %}
             </div>
             <div class="content-block">
-                <h2><span class="big">2</span> Book Your Flight</h2>
-                <img src="{{STATIC_URL}}img/calendar.png" alt="calendar">
-                <p>Use our on-line scheduling tool, or book your flight by telephone 24 hours a day. It's your aircraft. Travel whenever you want!</p>
-                <p><a href="">Schedule now.</a></p>
+		{% placeholder bottom_content_2 %}
             </div>
             <div class="content-block">
-                <h2><span class="big">3</span> Fly</h2>
-                <img src="{{STATIC_URL}}img/plane-small.png" alt="flying airplane">
-                <p>Simply tell us where you need to go, and we will do the rest. We will get you there on time, and your aircraft will wait for you to fly home.</p>
+		{% placeholder bottom_content_3 %}
             </div>
         </div>
 {% endblock %}

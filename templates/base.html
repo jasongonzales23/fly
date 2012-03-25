@@ -28,7 +28,7 @@
        Create your own custom Modernizr build: www.modernizr.com/download/ -->
   <script src="{{STATIC_URL}}js/libs/modernizr-2.5.3.min.js"></script>
 </head>
-<body class="{% block body_class %}{% endblock %}">
+<body class="{% block body_class %}{% endblock %}" id="{% block body_id %}{% endblock %}">
     {% cms_toolbar %}
     <div id="container">
         <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
