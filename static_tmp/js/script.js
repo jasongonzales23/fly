@@ -4,9 +4,11 @@
 $(document).ready(function(){
 
 var n = 0 ;
-	
+var len = $('.slide').length - 1;
+
+        
 	function runIt(){
-		if ( n > 4) { n = 0 };
+		if ( n > len ) { n = 0 };
 		
 		//hide stuff
 		$('.slide').hide();

@@ -1,0 +1,18 @@
+{% load thumbnail %}
+{% for slide in slideshow.slide_set.all %}
+<img class="slide" src="{% thumbnail slide.slide 434x289 %}" alt="{{ slide.heading_1 }}, {{slide.heading_2}}">
+
+{% endfor %}    
+<!--text to go with each slide-->
+{% for slide in slideshow.slide_set.all %}
+<div class="slideText">
+    <h1>{{ slide.heading_1 }}</h1>
+    <h3>{{ slide.heading_2 }}</h3>
+    <p>{{ slide.caption }}</p>
+    <div class="callToAction"><div class="action"><a href="{{ slide.buttonLink }}" class="contactLink">{{ slide.buttonText }}</a></div></div>
+</div>
+{% endfor %}
+
+{% for slide in slideshow.slide_set.all %}
+<div class="slide-thumb"><img src="{% thumbnail slide.slide 92x61 %}" alt="{{ slide.heading_1 }}, {{slide.heading_2}}" title="{{ slide.heading_1 }}, {{slide.heading_2}}"/></div>
+{% endfor %}

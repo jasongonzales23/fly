@@ -3,48 +3,8 @@
 {% block body_id %}home{% endblock %}
 {% block base_content %}
         <div id="slideshow">
-                <img class="slide default" src="{{STATIC_URL}}img/shared-ownership.png" alt="mobile devices">
-                <img class="slide" src="{{STATIC_URL}}img/runway.png" alt="runway">
-                <img class="slide" src="{{STATIC_URL}}img/aircraft-acquisition.png" alt="runway">
-                <img class="slide" src="{{STATIC_URL}}img/technology.png" alt="runway">
-                <img class="slide" src="{{STATIC_URL}}img/pilot.png" alt="runway">
-                <!--text to go with each slide-->
-                <div class="slideText default">
-                    <h1>Shared Ownership</h1>
-                    <h3>Aircraft ownership at its best.</h3>
-                    <p>The founders of FLY believed that aviation should be accessible to all individuals and businesses of all sizes. Now it is. We use the most efficient aircraft to enable more people to fly more places. Check out <a href="what-we-do.php">What We Do</a> to learn more.</p>
-                    <div class="callToAction"><div class="action"><a href="contact.php" class="contactLink">Contact Us</a></div></div>
-                </div>
-                <div class="slideText" >
-                    <h1>FLY Management</h1>
-                    <h3>Join our team. Join our family.</h3>
-                    <p>When you are part of our team, you are part of our family. We provide simple and honest aircraft management all over the Midwest. After we digitize all of your log books and maintenance records, scheduled mechanic visits are a breeze. Check out <a href="what-we-do.php">What We Do</a> to learn more.</p>
-                    <div class="callToAction"><div class="action"><a href="contact.php" class="contactLink">Contact Us</a></div></div>
-                </div>
-                <div class="slideText">
-                    <h1>Aircraft Acquisition</h1>
-                    <h3>Let us find your perfect match.</h3>
-                    <p>Finding the right aircraft to suit your needs can be intimidating. At FLY we understand, and have developed our Mission Profiler Tool to sort through literally every plane in the market. All we need to find your perfect match is some basic information about your travel needs. Check out <a href="what-we-do.php">What We Do</a> to learn more..</p>
-                    <div class="callToAction"><div class="action"><a href="contact.php" class="contactLink">Contact Us</a></div></div>
-                </div>
-                <div class="slideText">
-                    <h1>Technology</h1>
-                    <h3>Bringing aviation into the 21st century.</h3>
-                    <p>Every year new technology transforms the way people fly. Our aircraft are outfitted with only the best, from the latest GPS add-ons to the most recent digital instrumentation. Technology is allowing pilots and passengers to fly safer every day. Please <a href="contact.php">contact us</a> with any technology questions.</p>
-                    <div class="callToAction"><div class="action"><a href="contact.php" class="contactLink">Contact Us</a></div></div>
-                </div>
-                <div class="slideText">
-                    <h1>FLY Pilots</h1>
-                    <h3>Our professional pilots are the best.</h3>
-                    <p>We fly our own families in fleet aircraft with confidence for one very simple reason: Great pilots. FLY Pilots are the same guys and gals that fly for the major airlines. The truth is, the best pilots prefer to fly for private clients. You have the freedom to go anywhere anytime, and our pilots have more time to spend with their families. Everyone wins.</p>
-                    <div class="callToAction"><div class="action"><a href="contact.php" class="contactLink">Contact Us</a></div></div>
-                </div>
-                <div id="thumb-1" class="slide-thumb active"></div>
-                <div id="thumb-2" class="slide-thumb"></div>
-                <div id="thumb-3" class="slide-thumb"></div>
-                <div id="thumb-4" class="slide-thumb"></div>
-                <div id="thumb-5" class="slide-thumb"></div>
-        </div>
+	{% placeholder slideshow %}
+	</div>
         <div id="bottom-content">
             <div class="content-block">
 		{% placeholder bottom_content_1 %}
