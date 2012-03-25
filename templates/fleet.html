@@ -1,0 +1,14 @@
+{% load thumbnail %}
+{% for plane in fleet.plane_set.all %}
+<div class="plane">   
+    <img class="bigImage" src="{% thumbnail plane.image 434x289 %}"/>
+    <div class="textRight">
+        <h2>{{ plane.title }}</h2>
+        <h4>{{ plane.seats }}</h4>
+        <h4>{{ plane.range }}</h4>
+        <h4>{{ plane.speed }}</h4>
+        <h4>{{ plane.ceiling }}</h4>
+        <p>{{ plane.description}}</p>
+    </div>
+</div>
+{% endfor%}

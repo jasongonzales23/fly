@@ -16,7 +16,6 @@ class Slide(models.Model):
     slideshow = models.ForeignKey(Slideshow)
     order = models.IntegerField()
     slide = models.ImageField(upload_to="uploads/slideshowImages/")
-    #thumbnail = models.ImageField(upload_to="uploads/slideshowImages")
     heading_1 = models.CharField(max_length=50, blank=True)
     heading_2 = models.CharField(max_length=50, blank=True)
     caption = models.TextField(max_length=255, blank=True)
@@ -28,6 +27,7 @@ class Slide(models.Model):
     
     def __unicode__(self):
         return str(self.order)
+
 #stuff you need to make it a plugin
 from cms.models import CMSPlugin
 

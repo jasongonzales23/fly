@@ -373,7 +373,6 @@ nav {
     border:1px solid #c1c1c1;
     width:92px;
     height:61px;
-    /*background: url(../img/thumb-sprite.png) no-repeat 3px 3px;*/
     float:left;
     margin:320px 10px 0 8px;
     -webkit-box-shadow:0px 2px 5px #000;
@@ -434,6 +433,11 @@ a.contactLink:hover {
     background:url(../img/img-shadow-bottom.png) no-repeat 0 289px;
     padding:0 0 20px 5px;
     float:left;
+}
+
+.plane {
+    overflow: auto;
+    margin: 0 0 40px 0;
 }
 
 .textRight {
