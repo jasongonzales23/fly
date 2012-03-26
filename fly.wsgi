@@ -2,7 +2,7 @@
 import os, site, sys
 
 # Tell wsgi to add the Python site-packages to it's path.
-site.addsitedir('/home/jgonzales/.virtualenvs/jesse/lib/python2.7/site-packages')
+site.addsitedir('/home/jgonzales/.virtualenvs/fly/lib/python2.7/site-packages')
 
 # Fix markdown.py (and potentially others) using stdout
 sys.stdout = sys.stderr
@@ -13,13 +13,13 @@ workspace = os.path.dirname(project)
 sys.path.append(workspace)
 
 # Tell wsgi to add additional folders to it's Python path such as apps or lib.
-sys.path.append('/home/jgonzales/webapps/jesse/src/jesse')
+sys.path.append('/home/jgonzales/webapps/fly/src/fly')
 
-os.environ['DJANGO_SETTINGS_MODULE'] = 'jesse.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'fly.settings'
 from django.core.handlers.wsgi import WSGIHandler
 application = WSGIHandler()
 
 # Tell wsgi to add additional folders to it's Python path such as apps or lib. 
 from django.conf import settings
-sys.path.insert(0, os.path.join(settings.PROJECT_ROOT, "apps"))
-sys.path.insert(0, os.path.join(settings.PROJECT_ROOT, "lib"))
+sys.path.insert(0, os.path.join(settings.PROJECT_PATH, "apps"))
+sys.path.insert(0, os.path.join(settings.PROJECT_PATH, "lib"))
