@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% block body_id %}what-we-do{% endblock %}
+{% block base_content %}
+<div id="subnav">
+    <h1>What We Do</h1>
+    <p class="instructions">CLICK FOR DETAILS</p>
+    <h2 class="management"><a href="#" class="selected">Fly Management</a></h2>
+    <h2 class="shared-ownership"><a href="#">Shared Ownership</a></h2>
+    <h2 class="acquisition"><a href="#">Acquisition</a></h2>
+</div>
+<div id="presentation">
+    <div class="management selected service">
+        <div class="article">
+	    {% placeholder fly_management_text %}
+            <!--h2>We take care of every little thing.</h2>
+            <p>The most successful companies understand that an aircraft is not only necessary, it is essential. Our unique approach to aircraft management will set you apart from others, because we take care of every little thing.</p>
+            <ul>
+                <li>When it is time to go, all you need to do is turn the key.</li>
+                <li>Monthly reports detail every aspect of your aircraft so you always know what is going on.</li>
+                <li>We have pilots that suit every specific travel need, and even instruct you in your own aircraft.</li>
+            </ul>
+            <p>Success is all about having the right people to call on. Call on FLY Aviation.</p-->
+        </div>
+        <img src="{{ STATIC_URL }}img/wrench.png" alt="wrench">
+    </div>
+    <div class="shared-ownership service">
+        <div class="article">
+	    {% placeholder shared_ownership_text %}
+            <!--h2>Have your cake and eat it too.</h2>
+            <p>
+            There is one very simple truth in aviation. The more you fly an aircraft the less it costs per hour. Using this simple philosophy, we have developed a shared ownership program that allows you to <strong>own the aircraft you want</strong>, instead of having to settle for the aircraft you can afford. Read more about our shared ownership opportunities <a href="about-the-planes.php">here</a> or <a href="">contact us</a> and we can discuss your aviation needs.
+            </p-->
+        </div>
+        <img  class="pie-chart" src="{{ STATIC_URL }}img/pie-chart.png" alt="pie chart">
+    </div>
+    <div class="acquisition service">
+        <div class="article">
+	    {% placeholder acquisition_text %}
+            <!--h2>Buy without turbulence.</h2>
+            <p>
+            Aviation is our passion, and the process of acquiring planes is something we enjoy. Because we are <strong>obsessed with planes</strong> we already have a deep understanding of the pros and cons of the aircraft you might be considering. Or we can steer you toward a choice that better fits your needs. Please reach out to the FLY staff, and use our knowledge of aircraft to find out which one is right for you. From piston singles to private jets, we do it all.
+            </p-->
+        </div>
+        <img class="plane-large" src="{{ STATIC_URL }}img/plane-large.png" alt="cool looking plane flying">
+    </div>
+</div>
+{% endblock %}
