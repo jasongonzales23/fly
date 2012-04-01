@@ -1,6 +1,8 @@
 from django.conf.urls.defaults import patterns, include, url
 from django.contrib import admin
 from django.conf import settings
+from django.views.generic.simple import direct_to_template
+from contact_us.views import contact
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 admin.autodiscover()
@@ -15,6 +17,8 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
+    url(r'^contact/$', contact),
+    url(r'^thanks/$', direct_to_template, {'template': 'thanks.html'}),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include('cms.urls')),
 )

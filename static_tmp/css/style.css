@@ -552,6 +552,10 @@ a.contactLink:hover {
     padding:10px 15px 0 10px;
 }
 
+.article a {
+    color: #007CF0;
+}
+
 #bottom-content {
     margin: 30px 0;
     overflow: auto;
@@ -641,7 +645,7 @@ footer p {
     display: inline-block;
     font-size: 15px;
     line-height: 1em;
-    margin: -.25em 0.25em 1.75em 0;
+    margin: .25em 0.25em 1.75em 0;
     padding: 0;
     width: 1.25em;
     height: 1.25em;
@@ -650,6 +654,11 @@ footer p {
     background:transparent;
     color:#fff;
 }   
+   
+#contactForm ul {
+    list-style:none;
+    margin:0;
+}
    
 #contactForm input[type=checkbox], #contactForm input[type=radio] {
     border: 1px solid #555;
@@ -716,7 +725,7 @@ input[type=radio] {
     margin: 0 0 0 10px;
 }
 
-.error {
+.error, #contactForm .errorlist {
     color:#ff5000;
 }
 /*____________________________END FORM STYLES___________________________*/
@@ -730,7 +739,7 @@ input[type=radio] {
  * Non-semantic helper classes: please define your styles before this section.
  */
 
-.fltRight {
+.fltRight, .plugin_picture.align-right {
     float:right;
 }
 
