@@ -28,10 +28,10 @@ def contact(request):
             #also send notifications to staff
             staff_subject = 'Contact from FLY Website'
             staff_message = 'Here is the info:\nName: ' + first_name + ' ' + last_name + '\nEmail: ' + email + '\nPhone: ' + phone + '\nInterested in:' + interest
-            staff_recipients = [ 'jason.gonzales23@gmail.com', ]#'Alex.Roush@flyaviationgroup.com']
+            staff_recipients = [ 'jason.gonzales23@gmail.com', 'Alex.Roush@flyaviationgroup.com']
             send_mail(staff_subject, staff_message, sender, staff_recipients, fail_silently=False)
             
-            return HttpResponseRedirect('/thanks/')
+            return HttpResponseRedirect('/contact/thanks/')
     else:
         form = ContactForm()
         

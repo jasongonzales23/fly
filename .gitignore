@@ -5,4 +5,4 @@ prod-settings.py
 *.conf
 fly_tmp/**/*
 *.komodoproject
-
+*.pyc
