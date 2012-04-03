@@ -430,7 +430,7 @@ a.contactLink:hover {
 }
 
 .bigImage {
-    background:url(../img/img-shadow-bottom.png) no-repeat 0 289px;
+    background:url(../img/img-shadow-bottom.png) no-repeat 15% 100%;
     padding:0 0 20px 5px;
     float:left;
 }
@@ -494,7 +494,7 @@ a.contactLink:hover {
 
 #what-we-do #presentation {
     float:left;
-    height:357px;
+    height:400px;
     width:685px;
     margin:17px 0 0 0;
     padding:25px 0;
